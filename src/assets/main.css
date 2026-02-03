@@ -1,0 +1,61 @@
+/* src/assets/main.css */
+
+/* 1. 基础重置：消除默认边距，确保宽高计算包含边框 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  /* 允许内容决定高度 */
+  height: auto; 
+  /* 保持平滑滚动 */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* 确保最小高度是一屏，但允许向下延伸 */
+  min-height: 100vh; 
+  width: 100%;
+  overflow-x: hidden;
+  /* 确保没有被隐藏的 overflow-y */
+  overflow-y: visible; 
+  
+  background-color: #0a0f18;
+  color: #ffffff;
+  /* ... 其他字体设置 ... */
+}
+
+/* 2. 字体定义：优先加载现代无衬线字体 */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+               'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', 
+               Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; /* 让字体在 macOS/Chrome 上更平滑 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0f18; /* 这里的颜色最好和你的 HeroSection 背景色一致 */
+  color: #ffffff;
+}
+
+/* 3. 平滑滚动：点击导航跳转时会有平滑动画 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 4. 链接与按钮基础样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit; /* 让按钮继承 body 的字体 */
+}
+
+img {
+  max-width: 100%; /* 图片宽度最大为父容器的100% */
+  height: auto;    /* 保持纵横比 */
+  display: block;  /* 消除图片下方的空隙 */
+}

@@ -22,9 +22,14 @@
         <button class="btn-primary" @click="scrollDown">
           探索技术细节
         </button>
-        <button class="btn-outline">
+        <a 
+          href="/CO2-NET/docs/report.pdf" 
+          target="_blank" 
+          class="btn-outline"
+          style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"
+        >
           查看研究文档
-        </button>
+        </a>
       </div>
     </div>
 
